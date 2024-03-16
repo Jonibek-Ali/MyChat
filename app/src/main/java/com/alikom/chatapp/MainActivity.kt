@@ -36,8 +36,7 @@ class MainActivity : AppCompatActivity() {
             dialog.dismiss()
         }
         view.findViewById<TextView>(R.id.deleteTextView).setOnClickListener {
-            //
-
+            ChatFragment().onItemDeleteClick(0)
 //            dialog.dismiss()
         }
 

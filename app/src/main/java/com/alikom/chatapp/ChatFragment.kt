@@ -39,7 +39,6 @@ class ChatFragment : Fragment(), ChatAdapter.OnItemClickListener {
     private val data = listOf(
         ChatModel(R.drawable.ic_bryin,"Bryan", "What do you think?"),
         ChatModel(R.drawable.ic_bryin,"Bryan", "What do you think?"),
-        ChatModel(R.drawable.ic_bryin,"Bryan", "What do you think?"),
         ChatModel(R.drawable.ic_kari,"Kari", "Looks great!"),
         ChatModel(R.drawable.ic_diana,"Diana", "Lunch on Monday?"),
         ChatModel(R.drawable.ic_ben,"Ben", "You sent a photo."),
@@ -87,7 +86,6 @@ class ChatFragment : Fragment(), ChatAdapter.OnItemClickListener {
     }
 
     override fun onItemDeleteClick(position: Int) {
-        // Обработка удаления элемента из RecyclerView
         adapter.removeItem(position)
     }
 }
